@@ -38,12 +38,68 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              "p-color": "#F85559",
+              "t-color": "#12121299",
             },
           },
         },
       };
     </script>
   </head>
-  <body></body>
+  <body class="font-lato">
+    <header class="container mx-auto">
+      <!-- navbar -->
+      <div
+        class="flex justify-between items-center lg:bg-p-color my-6 mx-16 rounded-full"
+      >
+        <!-- page links -->
+        <div class="hidden lg:flex items-center space-x-4 pl-12 text-white">
+          <a href="">Home</a>
+          <a href="">About Us</a>
+          <a href="">Shop</a>
+          <a href="">All Fruits</a>
+        </div>
+
+        <!-- logo -->
+        <div class="flex items-center space-x-2 lg:p-4">
+          <img class="h-10" src="images/logo.png" alt="" />
+          <h2 class="text-black lg:text-white text-2xl font-bold">
+            Fruit Burst
+          </h2>
+        </div>
+
+        <!-- search bar -->
+        <div class="hidden lg:flex items-center relative pr-12">
+          <input
+            type="text"
+            placeholder="Search here"
+            class="input h-9 w-60 max-w-xs rounded-full text-t-color text-sm"
+          />
+          <i
+            class="fa-solid fa-magnifying-glass absolute left-52 text-[#121212]"
+          ></i>
+        </div>
+
+        <!-- menubar for mobile -->
+        <div class="lg:hidden dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content shadow bg-base-100 rounded-box w-28"
+          >
+            <li><a>Home</a></li>
+            <li>
+              <a>About Us</a>
+            </li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
